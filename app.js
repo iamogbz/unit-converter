@@ -65,11 +65,17 @@ $.getJSON("eng_len_units.json", function(json){
     });
 });
 
+cache = {}; // cache shortest conversion path
 // calculate and return equivalent units
 solve = function(val, from, to) {
     try {
         //console.log("solve for", val, "from", from, "to", to);
-        route = BFS(from, to) // get shortest path
+        key = from+"."+to;
+        route = cache[key]; // get path from cache
+        if(route == undefined) {
+            route = BFS(from, to) // get shortest path
+            cache[key] = route;
+        }
         //console.log(route);
         mult = 1;
         for(i = 0; i < (route.length - 1); i++) {
@@ -86,13 +92,13 @@ solve = function(val, from, to) {
     } catch(e) {
         mult = 0; // reset
         console.log("caught", e);
-        alert("No conversion found");
+        alert("Conversion Failed");
     } finally {
         return val * mult;
     }
 };
 
-// function to take source unit and get shortest path to destination unit
+// function to take source unit and calculate shortest path to destination unit
 // using breadth-first-search (BFS)
 BFS = function (start, dest) {
     seen = {}; // reset seen

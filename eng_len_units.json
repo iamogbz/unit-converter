@@ -33,6 +33,5 @@
     "spindle":{"skein":"120"},
     "stick":{"inch":"2"},
     "twip":{},
-    "yard":{"cubit":"2","foot":"3"},
-    "freedom":{}
+    "yard":{"cubit":"2","foot":"3"}
 }
