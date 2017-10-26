@@ -94,7 +94,7 @@ solve = function(val, from, to) {
         console.log("caught", e);
         alert("Conversion Failed");
     } finally {
-        return val * mult;
+        return (val * mult).toFixed(2) * 1;
     }
 };
 
