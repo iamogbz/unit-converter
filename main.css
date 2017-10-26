@@ -4,7 +4,6 @@ html,body,div,span,table,tr,td,th,input,select,header,footer {
     margin:0;
     padding:0;
     position:relative;
-    font-family: consolas, san-serif, arial;
 }
 
 /* main */
@@ -13,6 +12,7 @@ body {
     background: #000;
     color: white;
     font-family: consolas, san-serif, arial;
+    font-size:1.5em;
 }
 
 body > h1 {
@@ -21,7 +21,7 @@ body > h1 {
 }
 
 .content {
-    width: 320px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -35,12 +35,14 @@ body > h1 {
     border-bottom:solid #222 2px;
     background:transparent;
     color: white;
-    height: 40px;
+    font-size:2em;
+    height: 120px;
 }
 
 .field>input {
     text-align: center;
-    width: 100px;
+    margin-right:64px;
+    width: 320px;
 }
 
 .field>select {
