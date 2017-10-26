@@ -1,5 +1,5 @@
 /* reset */
-html,body,div,span,table,tr,td,th,input,select {
+html,body,div,span,table,tr,td,th,input,select,header,footer {
     border:none;
     margin:0;
     padding:0;
@@ -48,4 +48,17 @@ body > h1 {
 }
 .field>select>option {
     background: black;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    font-size:smaller;
+}
+
+footer>*{
+    padding:16px;
 }
