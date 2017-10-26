@@ -4,34 +4,48 @@ html,body,div,span,table,tr,td,th,input,select {
     margin:0;
     padding:0;
     position:relative;
+    font-family: consolas, san-serif, arial;
 }
 
 /* main */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background: #000;
     color: white;
+    font-family: consolas, san-serif, arial;
+}
+
+body > h1 {
+    padding:48px;
+    text-align:center;
+}
+
+.content {
+    width: 320px;
+    margin: 0 auto;
 }
 
 .field {
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .field>input, .field>select {
     border-bottom:solid #222 2px;
     background:transparent;
     color: white;
-    text-align: center;
     height: 40px;
 }
 
 .field>input {
-    width: 60px;
+    text-align: center;
+    width: 100px;
 }
 
 .field>select {
-    width: 140px;
+    width: 100%;
+}
+.field>select>option {
+    background: black;
 }

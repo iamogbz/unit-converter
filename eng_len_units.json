@@ -7,7 +7,7 @@
     "fathom":{"yard":"2"},
     "finger":{"inch":"0.875","point":"63"},
     "foot":{"hand":"3","inch":"12","shaftment":"2"},
-    "furlong":{"chain":"10"},
+    "furlong":{"gunter chain":"10"},
     "grade,step":{"pace":"2"},
     "gunter chain":{"fathom":"11","rod":"4"},
     "hand":{"stick":"2"},
@@ -24,7 +24,7 @@
     "pica":{"point":"12"},
     "point":{"twip":"20"},
     "ramsden chain":{"rope":"5"},
-    "roman mile":{"chain":"50"},
+    "roman mile":{"ramsden chain":"50"},
     "rope":{"step":"4"},
     "shackle":{"fathom":"15"},
     "shaftment":{"palm":"2"},
@@ -33,5 +33,6 @@
     "spindle":{"skein":"120"},
     "stick":{"inch":"2"},
     "twip":{},
-    "yard":{"cubit":"2","foot":"3"}
+    "yard":{"cubit":"2","foot":"3"},
+    "freedom":{}
 }
