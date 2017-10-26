@@ -1,0 +1,37 @@
+/* reset */
+html,body,div,span,table,tr,td,th,input,select {
+    border:none;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+/* main */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    color: white;
+}
+
+.field {
+    display:block;
+}
+
+.field>input, .field>select {
+    border-bottom:solid #222 2px;
+    background:transparent;
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+.field>input {
+    width: 60px;
+}
+
+.field>select {
+    width: 140px;
+}
