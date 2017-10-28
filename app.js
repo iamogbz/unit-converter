@@ -57,12 +57,12 @@ $.getJSON("eng_len_units.json", function(json){
         $("#unit-2").append(opt);
     }
     // set listeners for value changes
-    $("#unit-2, #field-1").change(function(){
-        $("#field-2").val(solve($("#field-1").val(), $("#unit-1").val(), $("#unit-2").val()));
-    });
-    $("#unit-1, #field-2").change(function(){
-        $("#field-1").val(solve($("#field-2").val(), $("#unit-2").val(), $("#unit-1").val()));
-    });
+    events = "change click keyup";
+    update = function(toFieldId, fromFieldId, fromUnitId, toUnitId) {
+        $(toFieldId).val(solve($(fromFieldId).val(), $(fromUnitId).val(), $(toUnitId).val()));
+    };
+    $("#unit-2, #field-1").on(events, function(){update("#field-2", "#field-1", "#unit-1", "#unit-2");});
+    $("#unit-1, #field-2").on(events, function(){update("#field-1", "#field-2", "#unit-2", "#unit-1");});
 });
 
 cache = {}; // cache shortest conversion path
