@@ -16,7 +16,7 @@
     "link":{},
     "mile":{"furlong":"8","yard":"1760"},
     "nail":{"digit":"3"},
-    "nautical league":{"mile":"3"},
+    "nautical league":{"nautical mile":"3"},
     "nautical mile":{"cable":"10","foot":"6076"},
     "pace":{"shaftment":"5"},
     "palm":{"digit":"4","inch":"3"},

@@ -77,10 +77,17 @@ solve = function(val, from, to) {
             cache[key] = route;
         }
         //console.log(route);
+        /*
+        rLookup = {};
+        for(n in unitKeyMap) {
+            rLookup[unitKeyMap[n]] = n;
+        }
+        */
         mult = 1;
         for(i = 0; i < (route.length - 1); i++) {
             a = route[i],
             b = route[i + 1];
+            //console.log(rLookup[a], "=>", rLookup[b])
             if(a == 0 || b == 0) {
                 return val * mult;
             } else if(rmap[a][b] != undefined) {
